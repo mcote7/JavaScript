@@ -22,5 +22,4 @@ function singleNumber(nums) {
     });
     return result;
 };
-
-singleNumber([4,1,2,1,2])
+console.log(singleNumber([4,1,2,1,2, -6, -6]));
