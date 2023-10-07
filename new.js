@@ -757,3 +757,297 @@
 // console.log(reverse(["a", "b", "c", "d"]))
 
 
+// document.
+
+// console.log("3" + 2);
+
+// const func1 = () => {
+//     console.log("x1?", x)
+//     const x = 123;
+// };
+
+// const func2 = () => {
+//     console.log("x2?", x)
+//     let x = 123;
+// };
+
+// function func3() {
+//     var x = 123;
+//     y = x;
+//     console.log("x3?", y)
+// };
+
+
+
+// // func1();
+// func2();
+// func3();
+
+// console.log("x?", y)
+// var x = 123;
+
+// const a = undefined;
+// const b = 1;
+
+// console.log(a || b)
+// console.log(a ?? b)
+
+// function Func() {
+//     this.name = "mike";
+//     this.anon = () => {
+//         console.log(this.name)
+//     };
+// };
+
+// let funcin = new Func();
+
+// console.log(funcin)
+
+// const x = ["abc", 2, "xdr", 4, false, null];
+// const y = x.filter((x)=> typeof(x) !== 'number');
+
+// x.forEach((x)=> {console.log(typeof(x))})
+
+// console.log(y)
+// 'use strict'
+// console.log(050)
+
+// const users = [
+//     {
+//         id:1,
+//         name: 'jack',
+//         isActive: true,
+//         age: 20
+//     },
+//     {
+//         id:2,
+//         name: 'john',
+//         isActive: true,
+//         age: 18
+//     },
+//     {
+//         id:3,
+//         name: 'mike',
+//         isActive: false,
+//         age: 30
+//     },
+// ];
+
+
+
+// const names = users.map((u)=> u.name);
+// console.log(names)
+
+// console.log('1',users.sort((a,b) => a.age > b.age ? 1 : -1))
+// console.log('2',users.sort((a,b) => a.age - b.age))
+
+// 'use strict'
+
+// const privateCounter = () => {
+//     let count = 2;
+//     return {
+//         increment: (val = 1) => {
+//             count * val;
+//         },
+//         getValue: () => {
+//             return count;
+//         }
+//     }
+// };
+
+// const counter = privateCounter();
+// counter.increment(6);
+// console.log(counter.getValue())
+
+// const multi = num1 => num2 => num1 + num2;
+
+// console.log(multi(2)(3))
+
+
+// const addToArray = (arr, item) => {
+//     return [...arr, item]
+// };
+
+// const concatArray = (arr1,arr2) => {
+//     return [...arr1, ...arr2].filter((x)=>!!x).sort((a,b)=>a-b).map(Number);
+// };
+
+// const arr = [1,2];
+// const newArr = addToArray(arr,3)
+
+// // console.log(newArr, arr)
+
+// console.log(concatArray([4,null,7,undefined,3,10,5], [1,2,'12', '14']))
+
+// const arr = ['abc', 'okok', 'toto', 'soso', 'abc', 'okok', 'abc', 'abc', 'aaacd', 'aaa'];
+
+// const uniq = [...new Set(arr)];
+
+// const sore = arr.sort();
+
+// console.log(sore)
+
+
+// console.log("Hello world".indexOf(" ", 3));
+
+// const curry = (a) => (b) => a += b;
+
+// console.log( curry(1)(4) )
+
+// function newFunc(a, b) {
+//     console.log(arguments)
+// };
+
+// console.log( newFunc(1,'abc') )
+
+// const arr = [73, 67, 38, 33];
+
+// function gradingStudents(grades) {
+//     const rounded = grades.map((n) => {
+//         if(n >= 38) {
+//             // console.log("round", n)
+//             if((n + 1) % 5 === 0) {
+//                 return n + 1;
+//             } else if((n + 2) % 5 === 0) {
+//                 return n + 2;
+//             } else if((n + 3) % 5 === 0) {
+//                 return n + 3;
+//             } else {
+//                 return n;
+//             }
+//             // 
+//         } else {
+//             return n;
+//         }
+//     });
+//     console.log(rounded)
+// }
+
+
+// gradingStudents(arr);
+
+// console.log(75 % 5 === 0)
+
+// console.log(1918 % 400 === 0 && 1918 % 100 !== 0)
+
+// function dayOfProgrammer(year) {
+//     const conversion = year === 1918;
+//     const isJulian = year < 1918;
+//     const isLeapYear = isLeap(year, isJulian);
+//     const febDays = conversion ? 15 : isLeapYear ? 29 : 28;
+//     const totalDays = 256 - (215 + febDays);
+//     // console.log(conversion, isJulian, isLeapYear, febDays, totalDays)
+//     return `${totalDays}.09.${year}`;
+// }
+
+// function isLeap(year, isJulian) {
+//     if(isJulian) {
+//         return year % 4 === 0;
+//     } else {
+//         return year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0);
+//     }
+// }
+
+
+// let a = 10;
+// let b = () => a++;
+// console.log(a + b()); // 20, post increment
+
+// let c = 10;
+// let d = () => ++c;
+// console.log(c + d()); // 21, pre increment
+
+
+// const nums =[1,2,3]
+
+// console.log(nums.length - -1) // 4
+
+// console.log( [2, 1, 43, 5].sort() );
+
+// const dollar = new Intl.Collator();
+
+// console.log(dollar)
+
+// let i = 0
+// const loop = (entry) => {
+//     while (i < entry) {
+//         console.log(i)
+//         i++
+//     }
+// }
+
+// loop(5.60)
+
+
+// const x = { index : 1 };
+// const y = {...x};
+// // const { index } = x;
+// y.index = 15;
+
+// console.log(x);
+// console.log(y);
+
+// const a = Object.create(null);
+// console.log(a)
+
+
+// const func = () => {
+//     let a = 1;
+//     return () => a++;
+// };
+
+// const result = func();
+
+// console.log('first res', result());
+// console.log('second res', result());
+
+// console.log('first res', func());
+// console.log('second res', func());
+
+
+// console.log(+"123Hello"); 
+// console.log(+"Hello123");
+
+// console.log( ["Sahjahan", "Ahmed"].find(item => item),["Sahjahan", "Ahmed"].filter(item => item)[0] )
+
+// const arr = [true, 'but i am string' ];
+// console.log(typeof arr.find(item => item != 1));
+
+
+// const x = Symbol('hey');
+// const y = Symbol('hey');
+// console.log(x.valueOf() == y.valueOf()); // hey
+
+// // get symbol by name
+// let sym = Symbol.for('hello');
+// let sym1 = Symbol.for('id');
+
+// // get name by symbol
+// console.log( Symbol.keyFor(sym) ); // hello
+// console.log( Symbol.keyFor(sym1) ); // id
+
+// let globalSymbol = Symbol.for("name");
+// let localSymbol = Symbol("ok");
+
+// console.log( Symbol.keyFor(globalSymbol) ); // name, global symbol
+// console.log( Symbol.keyFor(localSymbol) ); // undefined, not global
+
+// console.log( localSymbol.description ); // name
+
+// console.log(5 + +"6")
+
+// const firstName = null;
+
+// console.log( firstName ?? 'John');
+
+// console.log(typeof NaN);
+
+// let arr = [1,2,3];
+// arr = [...arr, 4];
+
+// console.log(arr)
+
+// const value = [...[1, 2, 3], ...[4, 5, 6]];
+// console.log("val?",value);
+
+// console.log("is true:", +(0.1 + 0.2).toPrecision(1));
